@@ -1,5 +1,6 @@
 # JPAddressSplitter
 日本郵政のWEBサイトからダウンロードできるCSVファイル「KEN_ALL.CSV」を使用して
+
 日本の住所を、「都道府県」、「市区郡町村」、「町域」、「番地」、「建物情報」の5つに分割します。
 
 [KEN_ALL.CSV](https://www.post.japanpost.jp/zipcode/dl/kogaki-zip.html)(全国一括からダウンロード)
@@ -14,5 +15,10 @@ foreach(JPAddressSplitter.SplitInfo si in addressList)
 {
   Console.WriteLine(si.AddressType.ToString() + ":" + si.AddressValue);
 }
-```
 
+//TypTodofuken:東京都
+//TypShikuchoson:港区
+//TypChoiki:芝公園
+//TypBanchi:４丁目２-８
+//TypTatemono:東京タワー
+```
